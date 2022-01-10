@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1 class="display-4">User {{user.username}}</h1>
+<p class="lead">User's information.</p>
+
+<form>
+
+    <p>{{user.last_name}}</p>
+    <p>{{user.first_name}}</p>
+    <p>{{user.email}}</p>
+
+    <button><a href="/user/{{user.username}}">User's feedback</a></button>
+
+    <button><a href="/">Back</a></button>
+
+</form>
+
+{% endblock %}
